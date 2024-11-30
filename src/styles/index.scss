@@ -1,0 +1,21 @@
+@import './variables/global';
+@import './fonts/montserrat';
+
+// reset default styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-main), sans-serif;
+}
+
+input,
+button,
+textarea,
+select {
+    margin: 0;
+    font: inherit;
+}

@@ -1,0 +1,16 @@
+.Widget {
+    background-color: var(--default-bg-color);
+    border-radius: var(--big-round);
+    min-width: 50px;
+    min-height: 50px;
+    padding: var(--medium-indent);
+
+    .icon {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    .title {
+        font: var(--font-subheadline);
+    }
+}

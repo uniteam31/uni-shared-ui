@@ -1,0 +1,64 @@
+:root {
+	/* Размеры */
+	--app-width: 1032px;
+
+	/* BG цвета */
+	--default-bg-color: #fff;
+	--dark-bg-color: #000;
+	--light-gray-bg-color: #F2F2F7;
+	--mid-gray-bg-color: #E5E5EA;
+	--dark-gray-bg-color: #1D1D1F;
+
+	/* Цвета */
+	--blue-color: #007AFF;
+	--green-color: #34C759;
+	--orange-color: #FF9500;
+	--red-color: #FF3B30;
+
+	/* Отступы */
+	--small-indent: 8px;
+	--medium-indent: 16px;
+	--big-indent: 24px;
+	--modal-padding: 32px;
+
+	/* Закругления */
+	--small-round: 4px; /* Маленькое закругление для кнопок и иконок */
+	--medium-round: 8px; /* Среднее закругление для карт и мелких элементов */
+	--big-round: 12px; /* Большое закругление для карточек и модальных окон */
+	--extra-big-round: 16px; /* Очень большое закругление для крупных элементов */
+
+	/* Основной шрифт */
+	--font-family-main: 'Montserrat', sans-serif;
+
+	/* Размеры шрифтов */
+	--font-size-title: 34px; /* Заголовок */
+	--font-line-title: 40px; /* Линия заголовка */
+	--font-title: var(--font-size-title) / var(--font-line-title) var(--font-family-main);
+
+	--font-size-headline: 28px; /* Основной заголовок */
+	--font-line-headline: 34px; /* Линия основного заголовка */
+	--font-headline: var(--font-size-headline) / var(--font-line-headline) var(--font-family-main);
+
+	--font-size-subheadline: 22px; /* Подзаголовок */
+	--font-line-subheadline: 27px; /* Линия подзаголовка */
+	--font-subheadline: var(--font-size-subheadline) / var(--font-line-subheadline) var(--font-family-main);
+
+	--font-size-body: 17px; /* Основной текст */
+	--font-line-body: 22px; /* Линия основного текста */
+	--font-body: var(--font-size-body) / var(--font-line-body) var(--font-family-main);
+
+	--font-size-callout: 16px; /* Всплывающее пояснение */
+	--font-line-callout: 19px; /* Линия всплывающего пояснения */
+	--font-callout: var(--font-size-callout) / var(--font-line-callout) var(--font-family-main);
+
+	--font-size-footnote: 13px; /* Сноски */
+	--font-line-footnote: 16px; /* Линия сносок */
+	--font-footnote: var(--font-size-footnote) / var(--font-line-footnote) var(--font-family-main);
+
+	--font-size-caption: 12px; /* Подписи */
+	--font-line-caption: 15px; /* Линия подписей */
+	--font-caption: var(--font-size-caption) / var(--font-line-caption) var(--font-family-main);
+
+	// z индексы
+	// пусто :)
+}

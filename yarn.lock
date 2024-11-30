@@ -214,6 +214,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@def1s/uni-sharedui@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@def1s/uni-sharedui@workspace:."
+  dependencies:
+    "@chromatic-com/storybook": "npm:^3.2.2"
+    "@eslint/js": "npm:^9.16.0"
+    "@rollup/plugin-typescript": "npm:^12.1.1"
+    "@storybook/addon-essentials": "npm:^8.4.6"
+    "@storybook/addon-interactions": "npm:^8.4.6"
+    "@storybook/addon-onboarding": "npm:^8.4.6"
+    "@storybook/blocks": "npm:^8.4.6"
+    "@storybook/react": "npm:^8.4.6"
+    "@storybook/react-vite": "npm:^8.4.6"
+    "@storybook/test": "npm:^8.4.6"
+    "@types/react": "npm:^18.3.12"
+    classnames: "npm:^2.5.1"
+    css-loader: "npm:^7.1.2"
+    eslint: "npm:^9.16.0"
+    eslint-plugin-react: "npm:^7.37.2"
+    globals: "npm:^15.12.0"
+    postcss: "npm:^8.4.49"
+    prettier: "npm:3.4.1"
+    react: "npm:^18.3.1"
+    react-dom: "npm:^18.3.1"
+    rollup-plugin-postcss: "npm:^4.0.2"
+    rollup-plugin-typescript2: "npm:^0.36.0"
+    sass: "npm:^1.81.0"
+    sass-loader: "npm:^16.0.3"
+    storybook: "npm:^8.4.6"
+    style-loader: "npm:^4.0.0"
+    tslib: "npm:^2.8.1"
+    typescript: "npm:^5.7.2"
+    typescript-eslint: "npm:^8.16.0"
+    vite: "npm:^6.0.1"
+  languageName: unknown
+  linkType: soft
+
 "@esbuild/aix-ppc64@npm:0.24.0":
   version: 0.24.0
   resolution: "@esbuild/aix-ppc64@npm:0.24.0"
@@ -6162,43 +6199,6 @@ __metadata:
   checksum: 10c0/81ca2e81134167cc8f75fa79fbcc8a94379d6c61de67090986a2273850989dd3bae8440c163121b77434b68263e34787a675cbdcb34bb2f764c6b9c843a11b66
   languageName: node
   linkType: hard
-
-"uni-sharedui@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "uni-sharedui@workspace:."
-  dependencies:
-    "@chromatic-com/storybook": "npm:^3.2.2"
-    "@eslint/js": "npm:^9.16.0"
-    "@rollup/plugin-typescript": "npm:^12.1.1"
-    "@storybook/addon-essentials": "npm:^8.4.6"
-    "@storybook/addon-interactions": "npm:^8.4.6"
-    "@storybook/addon-onboarding": "npm:^8.4.6"
-    "@storybook/blocks": "npm:^8.4.6"
-    "@storybook/react": "npm:^8.4.6"
-    "@storybook/react-vite": "npm:^8.4.6"
-    "@storybook/test": "npm:^8.4.6"
-    "@types/react": "npm:^18.3.12"
-    classnames: "npm:^2.5.1"
-    css-loader: "npm:^7.1.2"
-    eslint: "npm:^9.16.0"
-    eslint-plugin-react: "npm:^7.37.2"
-    globals: "npm:^15.12.0"
-    postcss: "npm:^8.4.49"
-    prettier: "npm:3.4.1"
-    react: "npm:^18.3.1"
-    react-dom: "npm:^18.3.1"
-    rollup-plugin-postcss: "npm:^4.0.2"
-    rollup-plugin-typescript2: "npm:^0.36.0"
-    sass: "npm:^1.81.0"
-    sass-loader: "npm:^16.0.3"
-    storybook: "npm:^8.4.6"
-    style-loader: "npm:^4.0.0"
-    tslib: "npm:^2.8.1"
-    typescript: "npm:^5.7.2"
-    typescript-eslint: "npm:^8.16.0"
-    vite: "npm:^6.0.1"
-  languageName: unknown
-  linkType: soft
 
 "unique-filename@npm:^3.0.0":
   version: 3.0.0

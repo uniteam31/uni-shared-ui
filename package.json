@@ -1,7 +1,10 @@
 {
-    "name": "uni-sharedui",
+    "name": "@def1s/uni-sharedui",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/def1s"
+    },
     "author": "uniteam",
-    "version": "0.0.1",
+    "version": "0.0.7",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
     "types": "dist/esm/index.d.ts",

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, memo } from 'react';
 import s from './NoteItem.module.scss';
 import classNames from 'classnames';
 
@@ -10,7 +10,7 @@ interface INoteItemProps {
     className?: string;
 }
 
-export const NoteItem: FC<INoteItemProps> = (props) => {
+export const NoteItem: FC<INoteItemProps> = memo((props) => {
     const { title, inner, data, className } = props;
 
     // TODO добавить валидатор длины полей и скрывать под хайд и ...
@@ -21,4 +21,4 @@ export const NoteItem: FC<INoteItemProps> = (props) => {
             <div className={s.data}>{data ?? 'Без даты создания'}</div>
         </div>
     );
-};
+});

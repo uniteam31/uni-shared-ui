@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, ReactElement } from 'react';
+import React, { memo, PropsWithChildren, ReactElement } from 'react';
 import classNames from 'classnames';
 import s from './Widget.module.scss';
 
@@ -12,7 +12,7 @@ interface IWidgetProps {
     className?: string;
 }
 
-export const Widget = (props: PropsWithChildren<IWidgetProps>) => {
+export const Widget = memo((props: PropsWithChildren<IWidgetProps>) => {
     const { className, icon, title, children } = props;
 
     return (
@@ -23,4 +23,4 @@ export const Widget = (props: PropsWithChildren<IWidgetProps>) => {
             {children}
         </div>
     );
-};
+});

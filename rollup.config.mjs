@@ -2,6 +2,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import typescript from 'rollup-plugin-typescript2';
 import postcss from 'rollup-plugin-postcss';
+import copy from 'rollup-plugin-copy';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -58,6 +59,12 @@ const config = (output) => ({
                 generateScopedName: 'uni_sharedui_[local]___[hash:base64:7]',
             },
         }),
+
+        // TODO раздавать шрифты из библиотеки, но также модифицировать пути в стилях к этим шрифтам
+        // copy({
+        //     targets: [{ src: 'src/styles/fonts/sources/**/*', dest: 'dist/fonts' }],
+        //     verbose: true,
+        // }),
     ],
 });
 

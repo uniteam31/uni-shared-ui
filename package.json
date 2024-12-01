@@ -1,10 +1,10 @@
 {
-    "name": "@def1s/uni-sharedui",
+    "name": "@uniteam31/uni-shared-ui",
     "publishConfig": {
-        "registry": "https://npm.pkg.github.com/def1s"
+        "registry": "https://npm.pkg.github.com/uniteam31"
     },
     "author": "uniteam",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
     "types": "dist/esm/index.d.ts",

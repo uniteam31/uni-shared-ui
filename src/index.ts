@@ -1,1 +1,3 @@
-export { Widget } from './components/Widget/Widget';
+export { Widget } from './components/Widget';
+
+export { NoteItem } from './components/Note';

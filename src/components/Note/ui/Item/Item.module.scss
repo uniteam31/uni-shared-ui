@@ -1,6 +1,6 @@
 @import "src/styles";
 
-.NodeItem {
+.Item {
     padding: 15px 20px;
     background-color: #fff;
     border-radius: 12px;
@@ -12,12 +12,12 @@
         font-weight: 500;
     }
 
-    .inner {
+    .text {
         font: var(--font-caption);
         font-weight: 100;
     }
 
-    .data {
+    .date {
         font: var(--font-caption);
         font-weight: 300;
     }

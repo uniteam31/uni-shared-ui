@@ -10,6 +10,7 @@ const meta: Meta<typeof Skeleton> = {
 export default meta;
 type Story = StoryObj<typeof Skeleton>;
 
+// TODO чтобы увидеть в сторибуке, нужно напрямую задавать стили
 export const Default: Story = {
     args: {},
 };

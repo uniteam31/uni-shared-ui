@@ -13,8 +13,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        label: 'sdfsaf',
-        // onChange: (value: string) => console.log(value),
-        // value: 'Содержание textArea. Можно писать сразу же, как в любом редакторе.',
+        label: 'Label',
     },
 };

@@ -11,3 +11,9 @@ export { Avatar } from './components/Avatar';
 export { Loader } from './components/Loader';
 
 export { Skeleton } from './components/Skeleton';
+
+export { Modal } from './components/Modal';
+
+export { Portal } from './components/Portal';
+
+export { LoadScreen } from './components/LoadScreen';

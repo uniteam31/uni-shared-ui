@@ -65,6 +65,11 @@ const config = (output) => ({
         //     targets: [{ src: 'src/styles/fonts/sources/**/*', dest: 'dist/fonts' }],
         //     verbose: true,
         // }),
+        // TODO экспортировать в формате .css
+        // TODO экспорт переменных, костыль? :)
+        copy({
+            targets: [{ src: 'src/styles/variables/global.scss', dest: 'dist/esm' }],
+        }),
     ],
 });
 

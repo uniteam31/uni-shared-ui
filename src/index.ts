@@ -17,3 +17,5 @@ export { Modal } from './components/Modal';
 export { Portal } from './components/Portal';
 
 export { LoadScreen } from './components/LoadScreen';
+
+export { Warning } from './components/Warning';

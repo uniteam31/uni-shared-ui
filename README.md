@@ -32,8 +32,5 @@ _**Линтинг**: ESLint, ~~Stylelint~~_
 - `npm run storybook`
 
 
-
 ## DEV GUIDE  
-
-Библиотека 
-
+TODO: описать

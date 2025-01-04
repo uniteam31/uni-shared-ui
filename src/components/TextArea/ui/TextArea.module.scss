@@ -1,0 +1,36 @@
+.textAreaWrapper {
+    position: relative;
+
+    .floatingLabel {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: var(--medium-indent);
+        font-size: var(--font-size-body);
+        pointer-events: none;
+        transition: all 0.3s ease;
+        color: rgb(119, 119, 119);
+    }
+
+    .TextArea {
+        display: block;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: var(--medium-round);
+        padding: var(--big-indent) var(--medium-indent) 0;
+
+        &:disabled {
+            background-color: var(--light-gray-bg-color);
+            cursor: wait;
+        }
+
+
+        &:not(:placeholder-shown) + .floatingLabel,
+        &:focus + .floatingLabel {
+            top: 0;
+            transform: translateY(50%);
+            left: var(--medium-indent);
+            font-size: 12px;
+        }
+    }
+}

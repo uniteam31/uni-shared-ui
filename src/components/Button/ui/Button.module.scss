@@ -13,5 +13,6 @@
 
     &:disabled {
         background-color: var(--mid-gray-bg-color);
+        cursor: not-allowed;
     }
 }

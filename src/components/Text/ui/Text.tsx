@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { memo, ReactNode } from 'react';
 import classNames from 'classnames';
 import s from './Text.module.scss';
 
@@ -16,7 +16,7 @@ export enum TextAlign {
 interface ITextProps {
     className?: string;
     title?: string;
-    text?: string;
+    text?: ReactNode;
     theme?: TextTheme;
     align?: TextAlign;
 }

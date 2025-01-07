@@ -8,7 +8,7 @@ type TWarningTheme = 'green' | 'blue' | 'red';
 interface IWarningProps {
     Icon?: ReactNode;
     title?: string;
-    text?: string;
+    text?: ReactNode;
     //
     theme?: TWarningTheme;
     className?: string;

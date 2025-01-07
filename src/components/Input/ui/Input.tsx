@@ -9,11 +9,12 @@ interface IInputProps extends HTMLInputProps {
     onChange?: (value: string) => void;
     //
     label: string;
+    error?: boolean;
     className?: string;
 }
 
 export const Input = memo((props: IInputProps) => {
-    const { className, value, onChange, label, ...otherProps } = props;
+    const { className, value, onChange, label, error, ...otherProps } = props;
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         onChange?.(e.target.value);
@@ -26,11 +27,11 @@ export const Input = memo((props: IInputProps) => {
                 value={value}
                 onChange={handleChange}
                 placeholder=" "
-                className={classNames(s.Input, {}, [className])}
+                className={classNames(s.Input, className, error && s.error)}
                 {...otherProps}
             />
 
-            <label className={s.floatingLabel}>{label}</label>
+            <label className={classNames(s.floatingLabel, error && s.error)}>{label}</label>
         </div>
     );
 });

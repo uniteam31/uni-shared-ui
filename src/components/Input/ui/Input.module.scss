@@ -34,4 +34,9 @@
             font-size: 12px;
         }
     }
+
+    .error {
+        border-color: var(--red-color);
+        color: var(--red-color);
+    }
 }

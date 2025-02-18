@@ -19,3 +19,9 @@ export { Portal } from './Portal';
 export { LoadScreen } from './LoadScreen';
 
 export { Warning } from './Warning';
+
+export { Widget } from './Widget';
+
+export { Link } from './Link';
+
+export { Divider } from './Divider';

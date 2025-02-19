@@ -1,4 +1,5 @@
-import React, { memo, ReactNode } from 'react';
+import React, { memo } from 'react';
+import type { ReactNode } from 'react';
 import { Text } from '../../Text';
 import s from './Warning.module.scss';
 import classNames from 'classnames';

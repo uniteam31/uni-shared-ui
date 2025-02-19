@@ -1,4 +1,5 @@
-import React, { ImgHTMLAttributes, memo } from 'react';
+import React, { memo } from 'react';
+import type { ImgHTMLAttributes } from 'react';
 import classNames from 'classnames';
 import s from './Avatar.module.scss';
 

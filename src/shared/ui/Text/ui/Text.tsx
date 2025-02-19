@@ -1,4 +1,5 @@
-import React, { memo, ReactNode } from 'react';
+import React, { memo } from 'react';
+import type { ReactNode } from 'react';
 import classNames from 'classnames';
 import s from './Text.module.scss';
 

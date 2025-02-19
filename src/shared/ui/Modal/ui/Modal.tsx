@@ -1,4 +1,4 @@
-import { MouseEvent, ReactNode } from 'react';
+import type { MouseEvent, ReactNode } from 'react';
 import { Portal } from '../../Portal';
 import s from './Modal.module.scss';
 import classNames from 'classnames';

@@ -1,5 +1,6 @@
 import classNames from 'classnames';
-import { ChangeEvent, InputHTMLAttributes, memo } from 'react';
+import { memo } from 'react';
+import type { ChangeEvent, InputHTMLAttributes } from 'react';
 import s from './TextArea.module.scss';
 
 type HTMLTextAreaProps = Omit<InputHTMLAttributes<HTMLTextAreaElement>, 'value' | 'onChange'>;

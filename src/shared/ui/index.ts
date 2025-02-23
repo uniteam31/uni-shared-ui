@@ -25,3 +25,5 @@ export { Widget } from './Widget';
 export { Link } from './Link';
 
 export { Divider } from './Divider';
+
+export { ImageInput } from './ImageInput';

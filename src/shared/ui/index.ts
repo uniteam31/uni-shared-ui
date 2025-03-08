@@ -27,3 +27,5 @@ export { Link } from './Link';
 export { Divider } from './Divider';
 
 export { ImageInput } from './ImageInput';
+
+export * from './Dropdown';

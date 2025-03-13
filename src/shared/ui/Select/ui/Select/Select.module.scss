@@ -1,4 +1,4 @@
-.dropdown {
+.select {
 	position: relative;
 	display: inline-block;
 	font: var(--font-body);
@@ -11,8 +11,7 @@
 		background-color: transparent;
 	}
 
-	.dropdownToggle {
-		//white-space: none;
+	.selectToggle {
 		width: 100%;
 		padding: var(--small-indent);
 		font: var(--font-body);
@@ -33,7 +32,7 @@
 			background: var(--mid-gray-bg-color);
 		}
 
-		.dropdownIcon {
+		.selectIcon {
 			width: 20px;
 			height: 20px;
 			margin-left: var(--small-indent);
@@ -45,7 +44,7 @@
 		}
 	}
 
-	.dropdownMenu {
+	.selectMenu {
 		position: absolute;
 		top: 100%;
 		left: 0;
@@ -55,27 +54,5 @@
 		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 		overflow: hidden;
 		padding: var(--small-indent) 0;
-
-		.dropdownItem {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			padding: var(--small-indent);
-			font: var(--font-body);
-			color: var(--dark-gray-bg-color);
-			cursor: pointer;
-			transition: background 0.3s ease;
-			overflow-wrap: break-word;
-
-			.checkIcon {
-				max-width: 20px;
-				max-height: 20px;
-			}
-
-			&:hover {
-				background: var(--light-gray-bg-color);
-			}
-		}
 	}
 }
-

@@ -1,0 +1,28 @@
+.SelectItem {
+	padding: var(--small-indent);
+	font: var(--font-body);
+	color: var(--dark-gray-bg-color);
+	cursor: pointer;
+	transition: background 0.3s ease;
+	overflow-wrap: break-word;
+	display: flex;
+	justify-content: space-between;
+	gap: var(--small-indent);
+	align-items: center;
+
+	&:hover {
+		background: var(--light-gray-bg-color);
+	}
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+		gap: var(--small-indent);
+		align-items: center;
+	}
+
+	.checkIcon {
+		max-width: 20px;
+		max-height: 20px;
+	}
+}

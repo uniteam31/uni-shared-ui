@@ -4,6 +4,7 @@ import s from './Dropdown.module.scss';
 import classNames from 'classnames';
 
 import ArrowDownIcon from '../../../assets/icons/down.svg';
+import CheckIcon from '../../../assets/icons/check.svg';
 
 export type TDropdownItem = {
     name: string;
@@ -86,6 +87,10 @@ export const Dropdown = (props: DropdownProps) => {
                             onClick={(event) => handleSelect(event, item)}
                         >
                             {item.name}
+
+                            {item.value === selectedItem?.value && (
+                                <CheckIcon className={s.checkIcon} />
+                            )}
                         </li>
                     ))}
                 </ul>

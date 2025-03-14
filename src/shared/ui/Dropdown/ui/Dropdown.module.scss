@@ -12,7 +12,6 @@
 	}
 
 	.dropdownToggle {
-		//white-space: none;
 		width: 100%;
 		padding: var(--small-indent);
 		font: var(--font-body);
@@ -49,7 +48,6 @@
 		position: absolute;
 		top: 100%;
 		left: 0;
-		width: 100%;
 		background: var(--default-bg-color);
 		border-radius: var(--big-round);
 		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -59,13 +57,14 @@
 		.dropdownItem {
 			display: flex;
 			align-items: center;
+			gap: var(--small-indent);
 			justify-content: space-between;
 			padding: var(--small-indent);
 			font: var(--font-body);
 			color: var(--dark-gray-bg-color);
 			cursor: pointer;
 			transition: background 0.3s ease;
-			overflow-wrap: break-word;
+			white-space: nowrap;
 
 			.checkIcon {
 				max-width: 20px;

@@ -61,6 +61,7 @@ export const Select = (props: Props) => {
 
         if (multiselect) {
             const isSelected = selectedItems.some((selected) => selected.value === item.value);
+
             if (isSelected) {
                 newSelectedItems = selectedItems.filter(
                     (selected) => selected.value !== item.value,
@@ -70,7 +71,7 @@ export const Select = (props: Props) => {
             }
         } else {
             newSelectedItems = [item];
-            setIsOpen(false); // закрываем выпадающий список для одиночного выбора
+            setIsOpen(false);
         }
 
         onSelect(newSelectedItems);
@@ -96,6 +97,7 @@ export const Select = (props: Props) => {
                 <ul className={s.selectMenu}>
                     {items.map((item) => (
                         <SelectItem
+                            key={item.value}
                             {...item}
                             onSelect={handleSelectItem}
                             isActive={isItemSelected(item)}

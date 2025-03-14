@@ -1,0 +1,17 @@
+.Placeholder {
+	display: flex;
+	gap: var(--small-indent);
+
+	.selectedItem {
+		display: flex;
+		align-items: center;
+		gap: var(--small-indent);
+
+		padding: 0 var(--small-indent);
+
+		border-style: solid;
+		border-width: 1px;
+		border-radius: var(--medium-round);
+		border-color: var(--light-gray-bg-color);
+	}
+}

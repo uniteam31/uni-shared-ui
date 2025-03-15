@@ -59,6 +59,7 @@ const config = (output) => ({
             modules: {
                 /** Будет генерировать префикс для всех стилей в библиотеке */
                 generateScopedName: 'uni_sharedui_[local]___[hash:base64:7]',
+                hashPrefix: 'prefix',
             },
         }),
 

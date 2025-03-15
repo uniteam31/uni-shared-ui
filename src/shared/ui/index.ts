@@ -20,7 +20,7 @@ export { LoadScreen } from './LoadScreen';
 
 export { Warning } from './Warning';
 
-export { Widget } from './Widget';
+export * from './Widget';
 
 export { Link } from './Link';
 

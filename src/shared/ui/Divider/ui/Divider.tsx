@@ -1,18 +1,15 @@
 import classNames from 'classnames';
 import s from './Divider.module.scss';
 
-export enum DividerDirection {
-    HORIZONTAL = 'horizontal',
-    VERTICAL = 'vertical',
-}
+type TDividerDirection = 'horizontal' | 'vertical';
 
 interface IDividerProps {
-    direction?: DividerDirection;
+    direction?: TDividerDirection;
     className?: string;
 }
 
 export const Divider = (props: IDividerProps) => {
-    const { direction = DividerDirection.VERTICAL, className } = props;
+    const { direction = 'vertical', className } = props;
 
     return <div className={classNames(s.Divider, s[direction], className)}></div>;
 };

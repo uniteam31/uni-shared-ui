@@ -1,0 +1,17 @@
+.DropdownMenuItem {
+	list-style-type: none;
+	cursor: pointer;
+	white-space: nowrap;
+	padding: var(--small-indent);
+
+	font-size: 14px;
+
+	&:hover {
+		background-color: var(--mid-gray-bg-color);
+		border-radius: var(--medium-round);
+	}
+}
+
+.divider {
+	margin: 2px 0;
+}

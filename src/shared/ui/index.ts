@@ -31,3 +31,7 @@ export { ImageInput } from './ImageInput';
 export * from './Dropdown';
 
 export * from './Select';
+
+export { Popup } from './Popup';
+
+export { DropdownMenu, TDropdownItem } from './DropdownMenu';

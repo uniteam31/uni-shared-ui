@@ -1,1 +1,1 @@
-export { Divider, DividerDirection } from './ui/Divider';
+export { Divider } from './ui/Divider';

@@ -1,10 +1,34 @@
-.title {
-    font: var(--font-subheadline);
-    font-weight: 700;
+.small {
+    .title {
+        font: var(--font-body);
+        font-weight: 700;
+    }
+
+    .text {
+        font: var(--font-footnote);
+    }
 }
 
-.text {
-    font: var(--font-body);
+.medium {
+    .title {
+        font: var(--font-subheadline);
+        font-weight: 700;
+    }
+
+    .text {
+        font: var(--font-body);
+    }
+}
+
+.large {
+    .title {
+        font: var(--font-headline);
+        font-weight: 700;
+    }
+
+    .text {
+        font: var(--font-subheadline);
+    }
 }
 
 .error {

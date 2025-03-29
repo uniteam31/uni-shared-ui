@@ -14,21 +14,31 @@ export enum TextAlign {
     CENTER = 'center',
 }
 
+type TSize = 'small' | 'medium' | 'large';
+
 interface ITextProps {
     className?: string;
     title?: string;
     text?: ReactNode;
     theme?: TextTheme;
     align?: TextAlign;
+    size?: TSize;
 }
 
 export const Text = memo((props: ITextProps) => {
-    const { className, title, text, theme = TextTheme.PRIMARY, align = TextAlign.LEFT } = props;
+    const {
+        className,
+        title,
+        text,
+        theme = TextTheme.PRIMARY,
+        align = TextAlign.LEFT,
+        size = 'medium',
+    } = props;
 
-    const additional = [className, s[theme], s[align]];
+    const additional = [className, s[theme], s[align], s[size]];
 
     return (
-        <div className={classNames(s.Text, additional)}>
+        <div className={classNames(additional)}>
             {title && <p className={s.title}>{title}</p>}
             {text && <p className={s.text}>{text}</p>}
         </div>

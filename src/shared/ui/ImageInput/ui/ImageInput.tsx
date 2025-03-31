@@ -26,7 +26,7 @@ export const ImageInput = memo((props: InputFileProps) => {
         ...otherProps
     } = props;
 
-    const onHandleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         onChange?.(e);
     };
 
@@ -38,7 +38,7 @@ export const ImageInput = memo((props: InputFileProps) => {
                 type="file"
                 id="fileInput"
                 className={cls.input}
-                onChange={(e) => onHandleChange(e)}
+                onChange={(e) => handleChange(e)}
                 {...otherProps}
             />
 

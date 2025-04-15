@@ -9,18 +9,20 @@ interface ModalProps {
     onClose: () => void;
     isOpen: boolean;
     //
+    /** Элемент, в который будет помещен портал */
+    element?: HTMLElement | null;
     className?: string;
 }
 
 export const Modal = (props: ModalProps) => {
-    const { className, children, onClose, isOpen } = props;
+    const { className, children, onClose, isOpen, element } = props;
 
     const onClickContent = (e: MouseEvent) => {
         e.stopPropagation();
     };
 
     return (
-        <Portal>
+        <Portal element={element}>
             <div className={classNames(s.Modal, isOpen && [s.isOpen], className)}>
                 <div className={s.overlay} onClick={onClose}>
                     <div className={s.content} onClick={(e) => onClickContent(e)}>

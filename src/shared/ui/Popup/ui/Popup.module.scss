@@ -1,0 +1,52 @@
+.Popup {
+	.contentWrapper {
+		margin: 0 auto;
+		position: relative;
+		width: 0;
+		height: 0;
+
+		.content {
+			position: absolute;
+		}
+
+		.top-left {
+			bottom: var(--small-indent);
+			right: 0;
+		}
+
+		.top-right {
+			bottom: var(--small-indent);
+			left: 0;
+		}
+
+		.bottom-left {
+			top: var(--small-indent);
+			right: 0;
+		}
+
+		.bottom-right {
+			top: var(--small-indent);
+			left: 0;
+		}
+
+		.left-top {
+			right: var(--small-indent);
+			bottom: 0;
+		}
+
+		.left-bottom {
+			right: var(--small-indent);
+			top: 0;
+		}
+
+		.right-top {
+			left: var(--small-indent);
+			bottom: 0;
+		}
+
+		.right-bottom {
+			left: var(--small-indent);
+			top: 0;
+		}
+	}
+}

@@ -1,0 +1,80 @@
+.dropdown {
+	position: relative;
+	display: inline-block;
+	font: var(--font-body);
+
+	.default {
+		background-color: #fff;
+	}
+
+	.clear {
+		background-color: transparent;
+	}
+
+	.dropdownToggle {
+		width: 100%;
+		padding: var(--small-indent);
+		font: var(--font-body);
+		color: var(--dark-gray-bg-color);
+		cursor: pointer;
+		transition: background 0.3s ease;
+
+		border-style: solid;
+		border-width: 1px;
+		border-radius: var(--medium-round);
+		border-color: var(--light-gray-bg-color);
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&:hover {
+			background: var(--mid-gray-bg-color);
+		}
+
+		.dropdownIcon {
+			width: 20px;
+			height: 20px;
+			margin-left: var(--small-indent);
+			transition: transform 0.2s;
+		}
+
+		.open {
+			transform: rotate(180deg);
+		}
+	}
+
+	.dropdownMenu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background: var(--default-bg-color);
+		border-radius: var(--big-round);
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+		padding: var(--small-indent) 0;
+
+		.dropdownItem {
+			display: flex;
+			align-items: center;
+			gap: var(--small-indent);
+			justify-content: space-between;
+			padding: var(--small-indent);
+			font: var(--font-body);
+			color: var(--dark-gray-bg-color);
+			cursor: pointer;
+			transition: background 0.3s ease;
+			white-space: nowrap;
+
+			.checkIcon {
+				max-width: 20px;
+				max-height: 20px;
+			}
+
+			&:hover {
+				background: var(--light-gray-bg-color);
+			}
+		}
+	}
+}
+

@@ -1,0 +1,50 @@
+.small {
+    .title {
+        font: var(--font-body);
+        font-weight: 700;
+    }
+
+    .text {
+        font: var(--font-footnote);
+    }
+}
+
+.medium {
+    .title {
+        font: var(--font-subheadline);
+        font-weight: 700;
+    }
+
+    .text {
+        font: var(--font-body);
+    }
+}
+
+.large {
+    .title {
+        font: var(--font-headline);
+        font-weight: 700;
+    }
+
+    .text {
+        font: var(--font-subheadline);
+    }
+}
+
+.error {
+    .title {
+        color: var(--red-color);
+    }
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}

@@ -3,6 +3,7 @@ import { fileURLToPath } from 'url';
 import typescript from 'rollup-plugin-typescript2';
 import postcss from 'rollup-plugin-postcss';
 import copy from 'rollup-plugin-copy';
+import svgr from '@svgr/rollup';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -43,6 +44,7 @@ const config = (output) => ({
     external: ['storybook'],
 
     plugins: [
+        svgr(),
         typescript({
             tsconfig: 'tsconfig.json',
             useTsconfigDeclarationDir: output.format !== 'es',
@@ -57,6 +59,7 @@ const config = (output) => ({
             modules: {
                 /** Будет генерировать префикс для всех стилей в библиотеке */
                 generateScopedName: 'uni_sharedui_[local]___[hash:base64:7]',
+                hashPrefix: 'prefix',
             },
         }),
 

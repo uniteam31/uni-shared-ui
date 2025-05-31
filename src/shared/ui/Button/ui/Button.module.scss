@@ -1,0 +1,43 @@
+.Button {
+    padding: var(--small-indent) var(--medium-indent);
+    border: none;
+    color: #fff;
+    border-radius: var(--medium-round);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:disabled {
+        background-color: var(--mid-gray-bg-color);
+        cursor: not-allowed;
+    }
+}
+
+.default {
+    background-color: var(--blue-color);
+
+    &:hover {
+        background-color: #005bb5;
+    }
+}
+
+.red {
+    border: 1px solid var(--red-color);
+    background-color: #fff;
+    color: var(--red-color);
+
+    &:hover {
+        color: #fff;
+        background-color: var(--red-color);
+    }
+}
+
+.green {
+    border: 1px solid var(--green-color);
+    background-color: #fff;
+    color: var(--green-color);
+
+    &:hover {
+        color: #fff;
+        background-color: var(--green-color);
+    }
+}
